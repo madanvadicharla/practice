@@ -1,1 +1,45 @@
 details file
+
+1. Created new repo https://github.com/madanvadicharla/practice.git with following files in master branch
+README.md
+common.txt
+details.txt
+
+2. Clone locally
+cd ~/git
+git clone https://github.com/madanvadicharla/practice.gitt
+cd practice
+vi details.txt
+git commit -am "initial instructions"
+git push
+
+3. Checkout new branch epics/epic1 from master/develop branch, this will be base branch for continuous development of story/feature branches
+git checkout -b epics/epic1
+vi common.txt
+git commit -am "epic1"
+git push -u origin epics/epic1
+
+4. Checkout new branch stories/story1 from epics/epic1 branch,  and edit common.txt with epic/story lines, details.txt with instructions/commands, create new story1.txt 
+git checkout -b epics/epic1/story1
+git add story1.txt
+git commit -am "story1"
+git push -u origin epics/epic1/story1
+
+5. Create pull request for story1 with epic1 as base
+
+6. Checkout new branch stories/story2 from epics/epic1//story2 branch, and edit ... new story2.txt
+git checkout -b epics/epic1/story2
+git add story2.txt
+git commit -am "story2"
+git push -u origin epics/epic1/story2
+
+7. Create pull request for story2 with story1 as base
+
+8. approve and merge story1 pr and see what happens to story2 pr
+
+9. approve and merge story2 pr, if not allowed, then change base to epics/epic1, see what happens to story2 pr
+
+10. any conflicts? note down observations, commit history, and best way to create branche, base, pr, strategy to minimise conflicts during merge
+
+11. try epci2 story1 story2 branches and prs in different ways and make notes, observations, strategy
+
