@@ -1,1 +1,4 @@
-common file { story1 }
+common file {
+    story1,
+    story2 
+}
